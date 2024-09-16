@@ -14,17 +14,17 @@ const LetsConnect = () => {
         <div className="w-full">
           <img src={contact} alt="phone" />
         </div>
-        <form onSubmit={handleSubmit} class="w-full" name="contact" netlify>
+        <form onSubmit={handleSubmit} className="w-full" name="contact" netlify>
           <label
             for="name"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
             Name
           </label>
-          <div class="relative mb-4">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <div className="relative mb-4">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
               <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                className="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -37,20 +37,20 @@ const LetsConnect = () => {
               type="text"
               id="name"
               name="name"
-              class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+              className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="Enter your name"
             />
           </div>
           <label
             for="email"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
             Your Email
           </label>
-          <div class="relative mb-4">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <div className="relative mb-4">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
               <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                className="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -64,28 +64,28 @@ const LetsConnect = () => {
               type="text"
               id="email"
               name="email"
-              class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+              className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="name@procodrr.com"
             />
           </div>
           <label
             for="message"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
             Message
           </label>
-          <div class="relative mb-4">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"></div>
+          <div className="relative mb-4">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"></div>
             <textarea
               id="message"
               name="message"
               rows="6"
-              class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+              className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
             ></textarea>
           </div>
           <button
             type="submit"
-            class="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+            className="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
           >
             Send
           </button>
