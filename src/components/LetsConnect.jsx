@@ -14,9 +14,8 @@ const LetsConnect = () => {
         {/* Form Setup */}
         <form
           name="contact"
-          method="POST"
-          data-netlify="true"
           className="w-full"
+          netlify
         >
           {/* Hidden input to store form name */}
           <input type="hidden" name="form-name" value="contact" />
