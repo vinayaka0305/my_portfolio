@@ -5,6 +5,7 @@ const LetsConnect = () => {
 
   const handleSubmit = (e)=>{
     e.preventDefault()
+    e.target.submit();
   }
   return (
     <section className="max-w-screen-xl mx-auto px-4 pb-12">
@@ -17,10 +18,11 @@ const LetsConnect = () => {
         </div>
         {/* Form Setup */}
         <form
-          name="contact"
-          className="w-full"
-          onSubmit={handleSubmit}
-          netlify
+         name="contact" 
+         method="POST" 
+         data-netlify="true" 
+         className="w-full"
+         onSubmit={handleSubmit}
         >
           {/* Hidden input to store form name */}
           <input type="hidden" name="form-name" value="contact" />
