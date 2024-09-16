@@ -6,11 +6,6 @@ import LetsConnect from "./LetsConnect";
 import Footer from "./Footer";
 
 const Home = () => {
-  useEffect(() => {
-    // // Initialize the Matter.js component when the Home component is mounted
-    // MatterComponent();
-  }, []);
-
   return (
     <>
       <section className="flex flex-col justify-between h-screen">
@@ -42,7 +37,7 @@ const Home = () => {
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="feather feather-sun"
+              className="feather feather-sun"
             >
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -64,7 +59,7 @@ const Home = () => {
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="hidden"
+              className="hidden"
             >
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
@@ -79,7 +74,7 @@ const Home = () => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-phone"
+                className="feather feather-phone"
               >
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
@@ -93,7 +88,7 @@ const Home = () => {
                 focusable="false"
                 data-prefix="fab"
                 data-icon="whatsapp"
-                class="svg-inline--fa fa-whatsapp fa-w-14"
+                className="svg-inline--fa fa-whatsapp fa-w-14"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -108,13 +103,7 @@ const Home = () => {
             </a>
           </nav>
         </header>
-        <div
-          id="wrapper-canvas"
-          className="absolute inset-0 -z-1 -top-[560px]  hidden md:block max-w-full"
-        >
-          <MatterComponent />
-        </div>
-        <div className="flex -mt-10 relative">
+        <div className="flex -mt-10 relative z-10">
           <div className="w-full px-4 max-w-screen-xl mx-auto">
             <svg
               viewBox="0 0 255 279"
@@ -279,7 +268,7 @@ const Home = () => {
             </li>
           </ul>
         </div>
-        <div className="relative after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] self-center after:left-1/2 after:-translate-x-1/2 after:top-[95px]">
+        <div className="relative z-10 after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] self-center after:left-1/2 after:-translate-x-1/2 after:top-[95px]">
           <button className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#1DE5E5] relative hover:scale-110 ease-in-out duration-100 group mb-20">
             Latest Works
             <svg
@@ -304,10 +293,11 @@ const Home = () => {
           </button>
         </div>
       </section>
+      <MatterComponent />
       <LatestWorks />
-      <Client/>
-      <LetsConnect/>
-      <Footer/>
+      {/* <Client /> */}
+      <LetsConnect />
+      <Footer />
     </>
   );
 };

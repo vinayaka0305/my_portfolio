@@ -1,16 +1,19 @@
-// MatterComponent.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Matter from 'matter-js';
-import $ from 'jquery';
 import 'matter-wrap';
 import 'matter-attractors';
 
 export default function MatterComponent() {
+  const canvasRef = useRef(null);
+  const matterInstance = useRef(null);
+
   useEffect(() => {
-    const canvas = $('#wrapper-canvas').get(0);
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
     const dimensions = {
-      width: $(window).width(),
-      height: $(window).height(),
+      width: window.innerWidth,
+      height: window.innerHeight,
     };
 
     Matter.use('matter-attractors');
@@ -35,8 +38,9 @@ export default function MatterComponent() {
       engine.world.gravity.scale = 0.1;
 
       const render = Render.create({
-        element: canvas,
+        element: document.body, // Attach render to the body or a specific container
         engine: engine,
+        canvas: canvas,
         options: {
           showVelocity: false,
           width: dimensions.width,
@@ -141,6 +145,11 @@ export default function MatterComponent() {
         stop() {
           Matter.Render.stop(render);
           Matter.Runner.stop(runner);
+          Render.stop(render);
+          World.clear(engine.world);
+          Engine.clear(engine);
+          render.canvas.remove();
+          render.textures = {};
         },
         play() {
           Matter.Runner.run(runner, engine);
@@ -170,26 +179,32 @@ export default function MatterComponent() {
     }
 
     function setWindowSize() {
-      dimensions.width = $(window).width();
-      dimensions.height = $(window).height();
+      dimensions.width = window.innerWidth;
+      dimensions.height = window.innerHeight;
 
-      m.render.options.width = dimensions.width;
-      m.render.options.height = dimensions.height;
-      m.render.canvas.width = dimensions.width;
-      m.render.canvas.height = dimensions.height;
-      Matter.Engine.update(m.engine);
+      if (matterInstance.current) {
+        const { render, engine } = matterInstance.current;
+        render.options.width = dimensions.width;
+        render.options.height = dimensions.height;
+        render.canvas.width = dimensions.width;
+        render.canvas.height = dimensions.height;
+        Matter.Engine.update(engine);
+      }
     }
 
-    const m = runMatter();
+    matterInstance.current = runMatter();
     setWindowSize();
-    $(window).resize(debounce(setWindowSize, 250));
+    const debouncedSetWindowSize = debounce(setWindowSize, 250);
+    window.addEventListener('resize', debouncedSetWindowSize);
 
     // Cleanup on component unmount
     return () => {
-      m.stop();
-      $(window).off('resize');
+      if (matterInstance.current) {
+        matterInstance.current.stop();
+      }
+      window.removeEventListener('resize', debouncedSetWindowSize);
     };
   }, []);
 
-  return null;
+  return <canvas ref={canvasRef} className="w-full h-full absolute -top-5 z-0 pointer-events-auto hidden md:block"/>;
 }
