@@ -2,6 +2,9 @@ import React from "react";
 import contact from "../assets/images/contact-me.svg";
 
 const LetsConnect = () => {
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+  }
   return (
     <section className="max-w-screen-xl mx-auto px-4 pb-12">
       <h2 className="text-3xl sm:w-max sm:text-[40px] bg-[#111] relative font-bold px-4 py-2 text-center mx-auto sm:border-2 border-[#1788ae] rounded-md">
@@ -11,7 +14,7 @@ const LetsConnect = () => {
         <div className="w-full">
           <img src={contact} alt="phone" />
         </div>
-        <form class="w-full" name="contact" netlify>
+        <form onSubmit={handleSubmit} class="w-full" name="contact" netlify>
           <label
             for="name"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
