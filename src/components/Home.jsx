@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import MatterComponent from "./MatterComponent";
 import LatestWorks from "./LatestWorks";
 import Client from "./Client";
@@ -6,6 +7,16 @@ import LetsConnect from "./LetsConnect";
 import Footer from "./Footer";
 
 const Home = () => {
+
+  const sectionRef = useRef();
+
+  const scrollSection = () => {
+    if (sectionRef.current) {
+      const offsetTop = sectionRef.current.offsetTop; // Get the top position of the section
+      const scrollPosition = offsetTop - (-120); // Scroll 100px above the section
+      window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <section className="flex flex-col justify-between h-screen">
@@ -268,8 +279,8 @@ const Home = () => {
             </li>
           </ul>
         </div>
-        <div className="relative z-10 after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] self-center after:left-1/2 after:-translate-x-1/2 after:top-[95px]">
-          <button className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#1DE5E5] relative hover:scale-110 ease-in-out duration-100 group mb-20">
+        <div ref={sectionRef} className="relative z-10 after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] self-center after:left-1/2 after:-translate-x-1/2 after:top-[95px]">
+          <button onClick={scrollSection} className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#1DE5E5] relative hover:scale-110 ease-in-out duration-100 group mb-20">
             Latest Works
             <svg
               xmlns="http://www.w3.org/2000/svg"
