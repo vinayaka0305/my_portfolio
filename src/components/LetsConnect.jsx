@@ -11,7 +11,7 @@ const LetsConnect = () => {
         <div className="w-full">
           <img src={contact} alt="phone" />
         </div>
-        <form class="w-full" name="contact" method="POST" data-netlify="true">
+        <form class="w-full" name="contact" netlify>
           <label
             for="name"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
