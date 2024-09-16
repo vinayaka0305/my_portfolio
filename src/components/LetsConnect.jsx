@@ -2,9 +2,6 @@ import React from "react";
 import contact from "../assets/images/contact-me.svg";
 
 const LetsConnect = () => {
-  const handleSubmit = (e)=>{
-    e.preventDefault()
-  }
   return (
     <section className="max-w-screen-xl mx-auto px-4 pb-12">
       <h2 className="text-3xl sm:w-max sm:text-[40px] bg-[#111] relative font-bold px-4 py-2 text-center mx-auto sm:border-2 border-[#1788ae] rounded-md">
@@ -14,10 +11,19 @@ const LetsConnect = () => {
         <div className="w-full">
           <img src={contact} alt="phone" />
         </div>
-        <form onSubmit={handleSubmit} className="w-full" name="contact" netlify>
+        {/* Form Setup */}
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="w-full"
+        >
+          {/* Hidden input to store form name */}
+          <input type="hidden" name="form-name" value="contact" />
+
           <label
-            for="name"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            htmlFor="name"
+            className="block mb-2 text-sm font-medium text-white dark:text-white"
           >
             Name
           </label>
@@ -41,9 +47,13 @@ const LetsConnect = () => {
               placeholder="Enter your name"
             />
           </div>
+
+          {/* Other form fields go here */}
+
+          {/* Email Field */}
           <label
-            for="email"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            htmlFor="email"
+            className="block mb-2 text-sm font-medium text-white dark:text-white"
           >
             Your Email
           </label>
@@ -65,17 +75,18 @@ const LetsConnect = () => {
               id="email"
               name="email"
               className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="name@procodrr.com"
+              placeholder="Enter your Email"
             />
           </div>
+
+          {/* Message Field */}
           <label
-            for="message"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            htmlFor="message"
+            className="block mb-2 text-sm font-medium text-white dark:text-white"
           >
             Message
           </label>
           <div className="relative mb-4">
-            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"></div>
             <textarea
               id="message"
               name="message"
@@ -83,6 +94,7 @@ const LetsConnect = () => {
               className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
             ></textarea>
           </div>
+
           <button
             type="submit"
             className="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
