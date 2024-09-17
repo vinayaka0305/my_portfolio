@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import contact from "../assets/images/contact-me.svg";
 
 const LetsConnect = () => {
 
+
+  const [userDetails,setUserDetails] = useState({
+    name:'',
+    email:'',
+    message:''
+  })
+
+  const handleChange = (e)=>{
+      const{name,value} = e.target
+      setUserDetails((prev)=>{
+        return {...prev,[name]:value}
+      })
+  }
+
+  const{name,email,message} = userDetails;
+
   const handleSubmit = (e)=>{
     e.preventDefault()
-    e.target.submit();
+   console.log(userDetails)
   }
   return (
     <section className="max-w-screen-xl mx-auto px-4 pb-12">
@@ -49,6 +65,8 @@ const LetsConnect = () => {
               type="text"
               id="name"
               name="name"
+              onChange={handleChange}
+              value={name}
               className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="Enter your name"
             />
@@ -80,6 +98,8 @@ const LetsConnect = () => {
               type="text"
               id="email"
               name="email"
+              onChange={handleChange}
+              value={email}
               className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="Enter your Email"
             />
@@ -96,6 +116,9 @@ const LetsConnect = () => {
             <textarea
               id="message"
               name="message"
+              onChange={handleChange}
+              value={message}
+              placeholder="your message"
               rows="6"
               className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
             ></textarea>
