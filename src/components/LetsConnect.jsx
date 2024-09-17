@@ -2,23 +2,20 @@ import React, { useState } from "react";
 import contact from "../assets/images/contact-me.svg";
 
 const LetsConnect = () => {
+  const [userDetails, setUserDetails] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUserDetails((prev) => {
+      return { ...prev, [name]: value };
+    });
+  };
 
-  const [userDetails,setUserDetails] = useState({
-    name:'',
-    email:'',
-    message:''
-  })
-
-  const handleChange = (e)=>{
-      const{name,value} = e.target
-      setUserDetails((prev)=>{
-        return {...prev,[name]:value}
-      })
-  }
-
-  const{name,email,message} = userDetails;
-
+  const { name, email, message } = userDetails;
 
   return (
     <section className="max-w-screen-xl mx-auto px-4 pb-12">
@@ -31,11 +28,10 @@ const LetsConnect = () => {
         </div>
         {/* Form Setup */}
         <form
-         name="contact" 
-         method="POST" 
-         data-netlify="true" 
-         className="w-full"
-         onSubmit={handleSubmit}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="w-full"
         >
           {/* Hidden input to store form name */}
           <input type="hidden" name="form-name" value="contact" />
