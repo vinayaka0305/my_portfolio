@@ -19,10 +19,7 @@ const LetsConnect = () => {
 
   const{name,email,message} = userDetails;
 
-  const handleSubmit = (e)=>{
-    e.preventDefault()
-   console.log(userDetails)
-  }
+
   return (
     <section className="max-w-screen-xl mx-auto px-4 pb-12">
       <h2 className="text-3xl sm:w-max sm:text-[40px] bg-[#111] relative font-bold px-4 py-2 text-center mx-auto sm:border-2 border-[#1788ae] rounded-md">
