@@ -55,37 +55,27 @@ const LatestWorks = () => {
           </h3>
           <span class="text-[#df3409] text-base md:text-lg">(music)</span>
           <p class="text-justify text-sm md:text-base mt-2">
-            HariGurus is a one-stop-shop for all Hindu religious, customs and
-            traditional requirements. Built the complete site from scratch.
+            The Gaana Clone is a music streaming app inspired by Gaana, where
+            users can explore, listen to, and enjoy their favorite music online.
+            This project mimics the key features of the popular music streaming
+            service, offering an easy and enjoyable listening experience.
           </p>
 
           <ul class="flex flex-wrap gap-2 mt-2">
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #react.js
+              # react
             </li>
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #express.js
+              #swiper / react
             </li>
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #node.js
+              # css
             </li>
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #swiper.js
+              # javascript
             </li>
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #mongoDB
-            </li>
-            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #mongoose
-            </li>
-            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #css
-            </li>
-            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #javascript
-            </li>
-            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #figma
+              # html
             </li>
           </ul>
         </div>
@@ -93,41 +83,33 @@ const LatestWorks = () => {
       {/*project linkedin*/}
       <div class="flex flex-col sm:flex-row gap-4 sm:gap-['80px'] items-center mt-12 sm:mt-16 relative">
         <div class="w-full">
-          <h3 class="text-[#0f69c3] font-bold text-2xl md:text-4xl">Linkedin clone</h3>
-          <span class="text-[#0f69c3] text-base md:text-lg">(social media)</span>
+          <h3 class="text-[#0f69c3] font-bold text-2xl md:text-4xl">
+            Linkedin clone
+          </h3>
+          <span class="text-[#0f69c3] text-base md:text-lg">
+            (social media)
+          </span>
           <p class="text-justify text-sm md:text-base mt-2">
-            Being a lead developer, revamped the site to a highly responsive,
-            and interactive website. Created new features and pages. Worked as a
-            team with product manager and ux designer.
+            The LinkedIn Clone allows users to sign up, log in, create posts,
+            like, comment, and delete their comments. Users can also view other
+            profiles and engage with content through basic interactions.
           </p>
 
           <ul class="flex flex-wrap gap-2 mt-2">
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #react.js
+              # react
             </li>
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #express.js
+              # css
             </li>
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #node.js
+              # javascript
             </li>
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #swiper.js
+              # html
             </li>
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #mongoDB
-            </li>
-            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #mongoose
-            </li>
-            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #css
-            </li>
-            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #javascript
-            </li>
-            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-              #figma
+              # mui
             </li>
           </ul>
         </div>
@@ -141,7 +123,11 @@ const LatestWorks = () => {
           className="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
         >
           <div className="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
-            <img className="max-w-[400px] relative w-full z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.8)]" src={linkedin} alt="" />
+            <img
+              className="max-w-[400px] relative w-full z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.8)]"
+              src={linkedin}
+              alt=""
+            />
 
             <span className="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#0f69c3] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
               Linkedin clone
