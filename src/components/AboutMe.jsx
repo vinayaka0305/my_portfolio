@@ -6,7 +6,7 @@ const AboutMe = ({ isOpen, setIsOpen }) => {
   return createPortal(
     <section
       onClick={() => setIsOpen(false)}
-      className={`pointer-events-all flex-col md:flex-row z-10 w-[90%] mx-auto my-16 max-w-screen-xl fixed inset-0 flex bg-[#191919]/95 rounded-[10px] ${
+      className={`pointer-events-all flex-col md:flex-row z-10 w-[90%] mx-auto my-16 max-w-screen-xl fixed inset-0 flex bg-[#191919]/95 rounded-[10px] cursor-pointer ${
         isOpen ? "" : "hidden"
       }`}
     >
