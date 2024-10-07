@@ -13,17 +13,17 @@ const AboutMe = ({ isOpen, setIsOpen }) => {
       <div className="w-[30px] absolute rounded-[50%] bg-[#27292d] h-[30px] top-[15px] right-[15px] flex items-center justify-center cursor-pointer">
         <img src={xicon} alt="x-icon" onClick={() => setIsOpen(false)} />
       </div>
-      <div className="max-w-full flex mt-6 md:mt-0 items-center justify-center">
-        <div className="w-[65%] mx-auto">
+      <div className="max-w-full flex mt-10 md:mt-0 items-center justify-center">
+        <div className="w-full sm:w-[65%] md:w-[75%] mx-auto md:px-0 px-6">
           <h2 className="text-[#1788ae] font-extrabold">ABOUT ME</h2>
-          <p className="my-2 font-semibold">
+          <p className="my-2 text-sm sm:text-base lg:text-base font font-semibold">
             Proficient in web development using HTML, CSS, JavaScript, and
             React. I have hands-on experience from practical projects and
             exercises, allowing me to create user-friendly web applications. I’m
             passionate about building effective solutions that improve the user
             experience.
           </p>
-          <ul className="flex flex-wrap mt-3 font-semibold">
+          <ul className="flex flex-wrap mt-4 font-semibold">
             <li className="border border-gray-600 px-3 py-1 rounded-full mb-2 mr-2">
               #javascript
             </li>
@@ -48,14 +48,13 @@ const AboutMe = ({ isOpen, setIsOpen }) => {
           </ul>
         </div>
       </div>
-      <div className="flex items-center justify-center md:-my-0 -my-14">
-        <div className="flex min-w-80 sd:max-w-full ">
+      <div className="flex">
+        <div className="flex relative min-w-80 sd:max-w-full items-center justify-center">
           <svg
-            width="600"
-            height="400"
             viewBox="0 0 900 600"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="md:w-[600px] md:h-[400px] w-[600px] h-[200px]  top-1"
           >
             <path fill="transparent" d="M0 0h900v600H0z" />
             <rect
