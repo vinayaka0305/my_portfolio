@@ -19,7 +19,7 @@ const LetsConnect = () => {
 
   return (
     <section className="max-w-screen-xl mx-auto px-4 pb-12">
-      <h2 className="text-3xl sm:w-max sm:text-[40px] bg-[#111] relative font-bold px-4 py-2 text-center mx-auto sm:border-2 border-[#1788ae] rounded-md">
+      <h2 className="text-3xl sm:w-max sm:text-[40px] bg-[#111] relative font-bold px-4 py-2 text-center mx-auto sm:border-2 border-[#0077b6] rounded-md">
         Let's Connect
       </h2>
       <div className="flex flex-col md:flex-row items-center mt-8">
@@ -60,7 +60,7 @@ const LetsConnect = () => {
               name="name"
               onChange={handleChange}
               value={name}
-              className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+              className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0077b6] focus:border-[#0077b6] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="Enter your name"
             />
           </div>
@@ -119,7 +119,7 @@ const LetsConnect = () => {
 
           <button
             type="submit"
-            className="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+            className="w-full text-white bg-[#0077b6] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
           >
             Send
           </button>

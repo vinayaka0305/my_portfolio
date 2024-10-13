@@ -5,14 +5,14 @@ import linkedin from "../mockups/linkedin.png";
 const LatestWorks = () => {
   return (
     <section className="max-w-screen-xl mx-auto px-4 relative sm:pb-16">
-      <h2 className="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
+      <h2 className="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#0077b6] sm:border-b-2 border-[#0077b6]">
         latest works
       </h2>
       {/* projects*/}
       {/*project gaana*/}
       <div class="flex flex-col sm:flex-row gap-4 sm:gap-['80px'] items-center mt-12 sm:mt-8 relative">
         {/* connecting line */}
-        <div className="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+        <div className="h-[1px] left-1/4 right-1/2 bg-[#0077b6] absolute top-1/2 hidden sm:block"></div>
         {/* connecting-dot */}
         <div className="w-4 h-4 rounded-full border-[3px] border-[#df3409] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-125 ease-in-out duration-100 hidden sm:block"></div>
         <a
@@ -114,7 +114,7 @@ const LatestWorks = () => {
           </ul>
         </div>
         {/* connecting line */}
-        <div className="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+        <div className="h-[1px] left-1/2 right-1/4 bg-[#0077b6] absolute top-1/2 hidden sm:block"></div>
         {/* connecting-dot */}
         <div className="w-4 h-4 rounded-full border-[3px] border-[#0f69c3] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-125 ease-in-out duration-100 hidden sm:block"></div>
         <a
@@ -154,7 +154,7 @@ const LatestWorks = () => {
       {/* another project div */}
 
       {/* center-line section*/}
-      <div className="absolute w-[2px] bg-[#1788ae] top-0 bottom-0 left-1/2 -translate-x-1/2 hidden sm:block"></div>
+      <div className="absolute w-[2px] bg-[#0077b6] top-0 bottom-0 left-1/2 -translate-x-1/2 hidden sm:block"></div>
     </section>
   );
 };

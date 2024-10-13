@@ -98,7 +98,7 @@ const HomeComponent = () => {
               <path
                 id="Vector 2"
                 d="M26 86H59M59 86L127 233L210 29L218 24.0769M59 86L5 46L114 273H142L239.418 29M236 13L218 24.0769M218 24.0769L249 5L239.418 29M218 24.0769L239.418 29"
-                stroke="#1DF0F0"
+                stroke="#70d6ff"
               />
             </g>
             <defs>
@@ -165,11 +165,11 @@ const HomeComponent = () => {
             <h1 className="pointer-events-none text-4xl md:text-[64px] font-['Spartan']">
               Vinayaka
             </h1>
-            <p className="pointer-events-none font-['Merriweather'] italic my-4 md:my-8">
+            <p className="pointer-events-none font-['Luckiest+Guy',cursive] italic my-4 md:my-8">
               Frontend Developer
             </p>
             <button
-              className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#1DE5E5] relative hover:scale-110 ease-in-out duration-100 group"
+              className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#70d6ff] relative hover:scale-110 ease-in-out duration-100 group"
               onClick={() => setIsOpen(true)}
             >
               About Me
@@ -265,7 +265,7 @@ const HomeComponent = () => {
         <button
           ref={sectionRef}
           onClick={scrollSection}
-          className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#1DE5E5] relative hover:scale-110 ease-in-out duration-100 group mb-20"
+          className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#70d6ff] relative hover:scale-110 ease-in-out duration-100 group mb-20"
         >
           Latest Works
           <svg
