@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
         <li>
-          <a href="#" target="_blank">
+          <a href="https://www.linkedin.com/in/vinayaka-av-03-05m/" target="_blank">
             <svg
               class="w-5 hover:text-white"
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
+          <a href="https://x.com/BheeshmaA18212?t=u6Yb7agGwxWZdMe0x4aiqA&s=09" target="_blank">
             <svg
               class="w-5 hover:text-white"
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.instagram.com/vinayaka_av/" target="_blank">
             <svg
               class="w-5 hover:text-white"
               xmlns="http://www.w3.org/2000/svg"
