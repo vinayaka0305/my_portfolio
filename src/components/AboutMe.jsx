@@ -15,13 +15,15 @@ const AboutMe = ({ isOpen, setIsOpen }) => {
       </div>
       <div className="max-w-full flex mt-10 md:mt-0 items-center justify-center">
         <div className="w-full sm:w-[65%] md:w-[75%] mx-auto md:px-0 px-6">
-          <h2 className="text-[#0077b6] font-['Luckiest+Guy',cursive] text-[22px] font-extrabold">ABOUT ME</h2>
+          <h2 className="text-[#0077b6] font-['Luckiest+Guy',cursive] text-[22px] font-extrabold">
+            ABOUT ME
+          </h2>
           <p className="my-2 text-sm sm:text-base lg:text-base font font-semibold">
-            Proficient in web development using HTML, CSS, JavaScript, and
-            React. I have hands-on experience from practical projects and
-            exercises, allowing me to create user-friendly web applications. I’m
-            passionate about building effective solutions that improve the user
-            experience.
+            Experienced with HTML, CSS, JavaScript, React, Node.js, Express.js,
+            and MongoDB. I have hands-on experience from practical projects,
+            building scalable and e cient solutions that improve the user
+            experience. Passionate about learning new technologies and
+            collaborating in team environments
           </p>
           <ul className="flex flex-wrap mt-4 font-semibold">
             <li className="border border-gray-600 px-3 py-1 rounded-full mb-2 mr-2">
@@ -35,6 +37,15 @@ const AboutMe = ({ isOpen, setIsOpen }) => {
             </li>
             <li className="border border-gray-600 px-3 py-1 rounded-full mb-2 mr-2">
               #css
+            </li>
+            <li className="border border-gray-600 px-3 py-1 rounded-full mb-2 mr-2">
+              #express JS
+            </li>
+            <li className="border border-gray-600 px-3 py-1 rounded-full mb-2 mr-2">
+              #nodeJS
+            </li>
+            <li className="border border-gray-600 px-3 py-1 rounded-full mb-2 mr-2">
+              #mongo DB
             </li>
             <li className="border border-gray-600 px-3 py-1 rounded-full mb-2 mr-2">
               #bootstrap
