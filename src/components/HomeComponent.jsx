@@ -166,7 +166,7 @@ const HomeComponent = () => {
               Vinayaka
             </h1>
             <p className="pointer-events-none font-['Luckiest+Guy',cursive] italic my-4 md:my-8">
-              Frontend Developer
+              MERN Stack Developer
             </p>
             <button
               className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#70d6ff] relative hover:scale-110 ease-in-out duration-100 group"
