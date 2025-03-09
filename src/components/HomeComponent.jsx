@@ -17,21 +17,34 @@ const HomeComponent = () => {
       <header className="pointer-events-none z-10 flex items-center justify-between mx-4 mt-4 max-w-screen-2xl forced-color-adjust-auto">
         {/* small Logo */}
         <svg
-          width="60"
-          height="60"
-          viewBox="0 0 247 271"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke="currentColor"
-        >
-          <g id="Property 1=New value">
-            <path
-              id="Vector 2"
-              d="M22 83H55M55 83L123 230L206 26L214 21.0769M55 83L1 43L110 270H138L235.418 26M232 10L214 21.0769M214 21.0769L245 2L235.418 26M214 21.0769L235.418 26"
-              stroke="currentColor"
-            />
-          </g>
-        </svg>
+  width="60"
+  height="60"
+  viewBox="0 0 247 271"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  className="stroke-white animate-glow hover:brightness-200 transition duration-500"
+>
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g id="Property 1=New value" filter="url(#glow)">
+    <path
+      id="Vector 2"
+      d="M22 83H55M55 83L123 230L206 26L214 21.0769M55 83L1 43L110 270H138L235.418 26M232 10L214 21.0769M214 21.0769L245 2L235.418 26M214 21.0769L235.418 26"
+    />
+  </g>
+</svg>
+
+
         {/* small Logo */}
         <nav className="flex pointer-events-auto gap-4 mx-1 cursor-pointer">
           <a
@@ -89,14 +102,30 @@ const HomeComponent = () => {
             viewBox="0 0 255 279"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="pointer-events-none absolute top-0 left-1/2 -translate-y-[100px] -translate-x-1/2 w-[200px] sm:w-[200px] md:w-[350px]"
+            className="pointer-events-none absolute top-0 left-1/2 -translate-y-[100px] -translate-x-1/2 w-[200px] sm:w-[200px] md:w-[350px] stroke-[3px] stroke-cyan-400 drop-shadow-glow animate-glow"
           >
             <g id="Property 1=New value" filter="url(#filter0_dd_2_18)">
               <path
                 id="Vector 2"
                 d="M26 86H59M59 86L127 233L210 29L218 24.0769M59 86L5 46L114 273H142L239.418 29M236 13L218 24.0769M218 24.0769L249 5L239.418 29M218 24.0769L239.418 29"
                 stroke="#70d6ff"
+                //  className="stroke-[url(#sparkleGradient)]"
               />
+              {/* <defs>
+                <linearGradient
+                  id="sparkleGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#ff0000" />
+                  <stop offset="25%" stop-color="#ff9900" />
+                  <stop offset="50%" stop-color="#ffff00" />
+                  <stop offset="75%" stop-color="#00ff00" />
+                  <stop offset="100%" stop-color="#00ffff" />
+                </linearGradient>
+              </defs> */}
             </g>
             <defs>
               <filter
@@ -196,11 +225,10 @@ const HomeComponent = () => {
         </div>
         <ul className="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
           <li>
-             {/* linkedin logo */}
+            {/* linkedin logo */}
             <a
               href="https://www.linkedin.com/in/vinayaka-av-03-05m/"
               target="_blank"
-              
             >
               <svg
                 className="w-7 hover:text-[#0a66c2] transition-transform duration-300 ease-in-out hover:scale-150 hover:opacity-80"
@@ -213,7 +241,7 @@ const HomeComponent = () => {
                 />
               </svg>
             </a>
-             {/* linkedin logo */}
+            {/* linkedin logo */}
           </li>
           <li>
             {/* x logo */}
@@ -222,7 +250,7 @@ const HomeComponent = () => {
               target="_blank"
             >
               <svg
-                 className="w-7 hover:text-white transition-transform duration-300 ease-in-out hover:scale-150 hover:opacity-80"
+                className="w-7 hover:text-white transition-transform duration-300 ease-in-out hover:scale-150 hover:opacity-80"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -232,10 +260,10 @@ const HomeComponent = () => {
                 />
               </svg>
             </a>
-             {/* x logo */}
+            {/* x logo */}
           </li>
           <li>
-             {/* email logo */}
+            {/* email logo */}
             <a href="mailto:vav6473@gmail.com">
               <svg
                 className="w-7 hover:text-red-500 transition-transform duration-300 ease-in-out hover:scale-150 hover:opacity-80"
@@ -248,13 +276,13 @@ const HomeComponent = () => {
                 />
               </svg>
             </a>
-             {/* email logo */}
+            {/* email logo */}
           </li>
           <li>
             {/* github logo */}
             <a href="https://github.com/vinayaka0305" target="_blank">
               <svg
-                 className="w-7 hover:text-white transition-transform duration-300 ease-in-out hover:scale-150 hover:opacity-80"
+                className="w-7 hover:text-white transition-transform duration-300 ease-in-out hover:scale-150 hover:opacity-80"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"
               >
@@ -264,7 +292,7 @@ const HomeComponent = () => {
                 />
               </svg>
             </a>
-             {/* github logo */}
+            {/* github logo */}
           </li>
         </ul>
       </div>
