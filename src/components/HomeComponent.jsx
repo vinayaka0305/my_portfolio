@@ -17,33 +17,32 @@ const HomeComponent = () => {
       <header className="pointer-events-none z-10 flex items-center justify-between mx-4 mt-4 max-w-screen-2xl forced-color-adjust-auto">
         {/* small Logo */}
         <svg
-  width="60"
-  height="60"
-  viewBox="0 0 247 271"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  className="stroke-white animate-glow hover:brightness-200 transition duration-500"
->
-  <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="6" result="coloredBlur" />
-      <feMerge>
-        <feMergeNode in="coloredBlur" />
-        <feMergeNode in="coloredBlur" />
-        <feMergeNode in="coloredBlur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-  </defs>
+          width="60"
+          height="60"
+          viewBox="0 0 247 271"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="stroke-white animate-glow hover:brightness-200 transition duration-500"
+        >
+          <defs>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="6" result="coloredBlur" />
+              <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
 
-  <g id="Property 1=New value" filter="url(#glow)">
-    <path
-      id="Vector 2"
-      d="M22 83H55M55 83L123 230L206 26L214 21.0769M55 83L1 43L110 270H138L235.418 26M232 10L214 21.0769M214 21.0769L245 2L235.418 26M214 21.0769L235.418 26"
-    />
-  </g>
-</svg>
-
+          <g id="Property 1=New value" filter="url(#glow)">
+            <path
+              id="Vector 2"
+              d="M22 83H55M55 83L123 230L206 26L214 21.0769M55 83L1 43L110 270H138L235.418 26M232 10L214 21.0769M214 21.0769L245 2L235.418 26M214 21.0769L235.418 26"
+            />
+          </g>
+        </svg>
 
         {/* small Logo */}
         <nav className="flex pointer-events-auto gap-4 mx-1 cursor-pointer">
@@ -108,26 +107,22 @@ const HomeComponent = () => {
               <path
                 id="Vector 2"
                 d="M26 86H59M59 86L127 233L210 29L218 24.0769M59 86L5 46L114 273H142L239.418 29M236 13L218 24.0769M218 24.0769L249 5L239.418 29M218 24.0769L239.418 29"
-                stroke="#70d6ff"
-                //  className="stroke-[url(#sparkleGradient)]"
+                stroke="url(#sparkleGradient)"
               />
-              {/* <defs>
-                <linearGradient
-                  id="sparkleGradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="0%"
-                >
-                  <stop offset="0%" stop-color="#ff0000" />
-                  <stop offset="25%" stop-color="#ff9900" />
-                  <stop offset="50%" stop-color="#ffff00" />
-                  <stop offset="75%" stop-color="#00ff00" />
-                  <stop offset="100%" stop-color="#00ffff" />
-                </linearGradient>
-              </defs> */}
             </g>
             <defs>
+              <linearGradient
+                id="sparkleGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#1e87e5" />
+                <stop offset="50%" stop-color="#2996fb" />
+                <stop offset="100%" stop-color="#5abfff" />
+              </linearGradient>
+
               <filter
                 id="filter0_dd_2_18"
                 x="0.549271"
@@ -187,39 +182,62 @@ const HomeComponent = () => {
               </filter>
             </defs>
           </svg>
+
           {/* v logo */}
           <div className="relative ml-4 sm:ml-24 md:ml-28">
-            <h1 className="pointer-events-none text-4xl md:text-[64px] font-['Spartan']">
+            <h1
+              className="pointer-events-none text-4xl md:text-[44px] font-['Spartan'] 
+  text-white relative uppercase tracking-wider inline-block 
+  before:content-[''] before:absolute before:-left-2 before:-top-2 
+  before:w-full before:h-full before:rounded-lg before:bg-white/10 
+  before:blur-[10px] before:-z-10
+  after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full 
+  after:h-[3px] after:bg-[#2996fb] after:rounded-full"
+            >
               Vinayaka
             </h1>
-            <p className="pointer-events-none font-['Luckiest+Guy',cursive] italic my-4 md:my-8">
+
+            <p
+              className="pointer-events-none font-['Luckiest+Guy',cursive] italic my-4 md:my-8 
+  text-[#2996fb] text-xl md:text-2xl tracking-wide 
+  drop-shadow-[0_0_10px_#5abfff] transition-all duration-300 hover:scale-105"
+            >
               MERN Stack Developer
             </p>
+
             <button
-              className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#70d6ff] relative hover:scale-110 ease-in-out duration-100 group"
+              className="py-2 px-5 rounded-xl font-extrabold bg-gradient-to-r from-[#2996fb] to-[#005bbb] 
+  relative hover:scale-110 hover:shadow-[0px_0px_15px_#5abfff] ease-in-out duration-300 
+  group backdrop-blur-lg bg-opacity-30 shadow-lg active:scale-95 active:shadow-inner"
               onClick={() => setIsOpen(true)}
             >
               About Me
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
                 x="0px"
                 y="0px"
                 width="44"
                 height="44"
                 viewBox="0 0 100 100"
-                className="absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-8 ease-in-out duration-100"
+                className="absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-8 ease-in-out duration-300"
               >
                 <g transform="translate(0,-952.36218)">
                   <path
-                    d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                    d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 
+        l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 
+        -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 
+        c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 
+        l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 
+        0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 
+        c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
                     fill="#fff"
                     stroke="white"
-                    stroke-width="2"
+                    strokeWidth="2"
                   />
                 </g>
               </svg>
             </button>
+
             <AboutMe isOpen={isOpen} setIsOpen={setIsOpen} />
           </div>
         </div>
@@ -297,32 +315,41 @@ const HomeComponent = () => {
         </ul>
       </div>
       <div className="relative z-10 after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] self-center after:left-1/2 after:-translate-x-1/2 after:top-[95px]">
-        <button
-          ref={sectionRef}
-          onClick={scrollSection}
-          className="bg-[#24baba] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#059cc6] to-[#70d6ff] relative hover:scale-110 ease-in-out duration-100 group mb-20"
-        >
-          Latest Works
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            x="0px"
-            y="0px"
-            width="44"
-            height="44"
-            viewBox="0 0 100 100"
-            className="absolute rotate-90 left-1/2 -translate-x-1/2 top-9 group-hover:top-12 ease-in-out duration-100"
-          >
-            <g transform="translate(0,-952.36218)">
-              <path
-                d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
-                fill="#fff"
-                stroke="white"
-                stroke-width="2"
-              />
-            </g>
-          </svg>
-        </button>
+      <button
+  ref={sectionRef}
+  onClick={scrollSection}
+  className="bg-gradient-to-r from-[#2996fb] via-[#005bbb] to-[#2996fb] py-2 px-5 rounded-xl font-extrabold 
+  relative hover:scale-110 hover:shadow-[0px_0px_15px_#5abfff] ease-in-out duration-300 
+  group backdrop-blur-lg bg-opacity-30 shadow-lg active:scale-95 active:shadow-inner mb-20"
+>
+  Latest Works
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    x="0px"
+    y="0px"
+    width="44"
+    height="44"
+    viewBox="0 0 100 100"
+    className="absolute rotate-90 left-1/2 -translate-x-1/2 top-9 
+    group-hover:top-12 ease-in-out duration-300"
+  >
+    <g transform="translate(0,-952.36218)">
+      <path
+        d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 
+        l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 
+        -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 
+        c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 
+        l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 
+        0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 
+        c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+        fill="#fff"
+        stroke="white"
+        strokeWidth="2"
+      />
+    </g>
+  </svg>
+</button>
+
       </div>
     </section>
   );

@@ -14,9 +14,11 @@ export default {
       },
       keyframes: {
         glowEffect: {
-          "0%": { filter: "drop-shadow(0 0 10px #00ffff)" }, // Bright cyan glow
-          "100%": { filter: "drop-shadow(0 0 25px #00ffff)" }, // Stronger glow
+          "0%": { filter: "drop-shadow(0 0 10px #2996fb)" }, // Soft blue glow  
+          "50%": { filter: "drop-shadow(0 0 20px #5abfff)" }, // Brighter sky blue glow  
+          "100%": { filter: "drop-shadow(0 0 30px #2996fb)" }, // Stronger deep blue glow  
         },
+        
         whiteGlowEffect: {
           "0%": { filter: "drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)) brightness(1.2)" }, 
           "50%": { filter: "drop-shadow(0 0 35px rgba(255, 255, 255, 1)) brightness(1.5)" }, 

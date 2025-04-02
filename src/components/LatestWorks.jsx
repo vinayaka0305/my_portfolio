@@ -7,9 +7,13 @@ import game from "../mockups/game_tic.png";
 const LatestWorks = () => {
   return (
     <section className="max-w-screen-xl mx-auto px-4 relative sm:pb-16">
-      <h2 className="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#0077b6] sm:border-b-2 border-[#0077b6]">
-        latest works
-      </h2>
+     <h2
+  className="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto 
+  text-center text-[#ff3cac] sm:border-b-2 border-[#ff3cac]"
+>
+  latest works
+</h2>
+
       {/* projects*/}
 
       {/*project gaana*/}
@@ -287,7 +291,7 @@ const LatestWorks = () => {
       </div>
 
       {/* center-line section*/}
-      <div className="absolute w-[2px] bg-[#0077b6] top-0 bottom-0 left-1/2 -translate-x-1/2 hidden sm:block"></div>
+      <div className="absolute w-[2px] bg-[#ff3cac] top-0 bottom-0 left-1/2 -translate-x-1/2 hidden sm:block"></div>
     </section>
   );
 };
